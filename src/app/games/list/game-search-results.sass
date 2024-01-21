@@ -1,0 +1,15 @@
+#game-results-container
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-gap: 20px
+  max-width: 1280px
+  margin: auto
+
+  @media (max-width: 780px)
+    grid-template-columns: 1fr
+
+#no-game-found
+  min-height: 500px
+  display: flex
+  align-items: center
+  justify-content: center
