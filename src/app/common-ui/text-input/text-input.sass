@@ -1,0 +1,47 @@
+@import '@/app/styles/colors.sass'
+
+.text-field--container
+  padding: 0 20px
+  width: 100%
+
+.text-field
+  height: 36px
+  width: 100%
+  padding: 0 12px
+  background: $white
+  border: 1px solid $darkGrey
+  border-radius: 20px
+
+.text-field-set
+  opacity: 0.5
+  padding: 0
+  position: relative
+  display: flex
+  align-items: center
+  width: 100%
+  border: none
+
+  &.text-field-active
+    border-radius: 20px
+
+    .text-field-label
+      background-color: $white
+      z-index: 2
+      transform: translateY(-100%) scale(0.8)
+      padding: 0 4px
+
+.text-field-label
+  position: absolute
+  left: 16px
+  transform-origin: left
+  transition: all 0.3s ease
+  pointer-events: none
+
+  &.has-append-icon
+    padding-right: 16px
+
+.append-icon
+  position: absolute
+  right: 12px
+  cursor: pointer
+  width: 16px

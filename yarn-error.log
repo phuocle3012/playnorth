@@ -1,0 +1,51 @@
+Arguments: 
+  /Users/lephuoc/.nvm/versions/node/v20.10.0/bin/node /usr/local/Cellar/yarn/1.22.10/libexec/bin/yarn.js add sass --dev
+
+PATH: 
+  /Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/lephuoc/Downloads/google-cloud-sdk/bin:/Users/lephuoc/.nvm/versions/node/v20.10.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/go/bin:/Library/Apple/usr/bin:/Users/lephuoc/Projects/reactjs/play_north/node_modules/.bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  20.10.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  AggregateError
+      at internalConnectMultiple (node:net:1114:18)
+      at afterConnectMultiple (node:net:1667:5)
+
+npm manifest: 
+  {
+    "name": "play_north",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    },
+    "dependencies": {
+      "react": "^18",
+      "react-dom": "^18",
+      "next": "14.0.4"
+    },
+    "devDependencies": {
+      "typescript": "^5",
+      "@types/node": "^20",
+      "@types/react": "^18",
+      "@types/react-dom": "^18",
+      "eslint": "^8",
+      "eslint-config-next": "14.0.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
