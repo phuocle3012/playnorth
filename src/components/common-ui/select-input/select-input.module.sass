@@ -1,0 +1,80 @@
+@import '@/components/styles/colors.sass'
+
+.select-input--container
+  width: 100%
+  position: relative
+
+.select-input
+  height: 36px
+  width: 100%
+  padding: 0 12px
+  background: $white
+  border: 1px solid $darkGrey
+  border-radius: 4px
+  display: flex
+  align-items: center
+  cursor: pointer
+
+.select-input-set
+  opacity: 0.5
+  padding: 0
+  position: relative
+  display: flex
+  align-items: center
+  width: 100%
+  border: none
+
+  &.select-input-active
+    border-radius: 4px
+    opacity: 1
+
+    .select-input-label
+      background-color: $white
+      z-index: 2
+      transform: translateY(-100%) scale(0.8)
+      padding: 0 4px
+
+.select-input-label
+  position: absolute
+  left: 16px
+  transform-origin: left
+  transition: all 0.3s ease
+  pointer-events: none
+
+  &.has-append-icon
+    padding-right: 16px
+
+.append-icon
+  position: absolute
+  right: 12px
+  cursor: pointer
+  width: 16px
+
+.select-input--list-container
+  position: absolute
+  top: 100%
+  left: 0
+  background-color: $white
+  display: flex
+  flex-direction: column
+  width: 100%
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24), 0 0 4px rgba(0, 0, 0, 0.12)
+  border-bottom-left-radius: 8px
+  border-bottom-right-radius: 8px
+
+  .select-option
+    padding: 8px
+    cursor: pointer
+
+    &:hover
+      background-color: $whiteBlue
+
+    &.active
+      background-color: $whiteBlue
+
+    &:last-child
+      border-bottom-left-radius: 8px
+      border-bottom-right-radius: 8px
+
+    &:not(:last-child)
+      border-bottom: 1px solid $whiteGrey

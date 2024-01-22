@@ -17,12 +17,16 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 # Features
-- Home page rendered with default games as Server Component
-- /casino/[category] page with default games of category as Server Component
-- Redux store for showing loading overlay
-- Navigation using Link to category page
-- Search using redux to push 'searchText' from header to Home & Category page to demonstrate how to use global state to interact with local component logic.
-- Pagination to demonstrate how client interaction works using local state.
-- Mobile First Design or Responsive design with break point 780px
-- SASS file is used as a component-specific style sheet for easy management
-- There is no unit test written in UI since I follow the original Test Pyramid https://martinfowler.com/articles/practical-test-pyramid.html & TDD practice follow Uncle Bob (Martin) approach.
+- Home page is rendered with default games as a Server Component.
+- The /casino/[category] page displays default games of the category as a Server Component.
+- Redux store is used for displaying a loading overlay.
+- Navigation is facilitated using Link to the category page.
+- Search functionality utilizes Redux to push 'searchText' from the header to the Home & Category pages, demonstrating how to use global state to interact with local component logic.
+- Pagination demonstrates how client interaction works using local state.
+- Mobile-First Design or Responsive Design is implemented, with a breakpoint at 780px.
+- SASS files are used as component-specific stylesheets for easy management.
+- There is no unit test written in UI, since I follow the Test Pyramid(https://martinfowler.com/articles/practical-test-pyramid.html) and TDD practices as advocated by Uncle Bob (Robert C. Martin).
+
+# Notes
+- There is a nextjs_14 branch, which contains the original code created by npx create-next-app using Next.js version 14.
+- The main branch is a downgraded version of the original, where the 'app' folder (equivalent to the 'pages' folder) is converted to a 'components' folder.
